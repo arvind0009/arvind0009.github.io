@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Ubuntu:wght@400;500;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --text-color: #FFFFFF;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  position: relative;
+  overflow: hidden;
+  /*background-image: url("bg7.png");
+  background-size:50px 50px
+  background-repeat: no-repeat;*/
+  /*background: linear-gradient(90deg,rgba(2,0,.6,1) 0%,rgba(9,9,121,1) 35%,rgba(0,212,255,1) 100%);*/
+  background: linear-gradient(-45deg,#EE7752,#E73C7E,#23A6D5,#23D5AB,#00008b);
+  background-size: 400% 400%;
+  animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+  0%{
+    background-position: 0 50%;
+  }
+  50%{
+    background-position: 100% 50%;
+  }
+  100%{
+    background-position: 0 50%;
+  }
+}
+.box div:nth-child(1){
+  top: 12%;
+  left:42%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(2){
+  top: 70%;
+  left:60%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(3){
+  top: 20%;
+  left:50%;
+  animation: animate 7s linear infinite;
+}
+.box div:nth-child(4){
+  top: 32%;
+  left:90%;
+  animation: animate 8s linear infinite;
+}
+.box div:nth-child(5){
+  top: 40%;
+  left:24%;
+  animation: animate 17s linear infinite;
+}
+.box div:nth-child(6){
+  top: 67%;
+  left:10%;
+  animation: animate 10s linear infinite;
+}
+.box div:nth-child(7){
+  top: 17%;
+  left:6%;
+  animation: animate 9s linear infinite;
+}
+.box div:nth-child(8){
+  top: 42%;
+  left:42%;
+  animation: animate 15s linear infinite;
+}
+.box div:nth-child(9){
+  top: 70%;
+  left:80%;
+  animation: animate 12s linear infinite;
+}
+.box div:nth-child(10){
+  top: 90%;
+  left:25%;
+  animation: animate 16s linear infinite;
+}
+@keyframes animate{
+  0%{
+    transform: scale(0) translateY(0) rotate(0);
+    opacity: 1;
+  }
+  100%{
+   transform: scale(1.3) translateY(-90px) rotate(360deg);
+    opacity: 0; 
+  }
+}
+.image {
+    clip-path: circle();
+}
+.iamge{
+
+  width: 100%; padding: 10px; border-radius: 50%; box-shadow: 0 0 10px #999999;}
+/*.max-width{
+  max-width: 1300px;
+  margin: auto;
+  padding:0 80px;
+}*/
+.box div{
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: transparent;
+  border: 6px solid rgba(255,255,255,0.8);
+}
+.navbar{
+  position: fixed;
+  width: 100%;
+  font-family: 'Ubuntu',sans-serif;
+  
+}
+.max-width{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+.logo {
+  color: #fff;
+  font-size: 35px;
+  font-weight: 600;
+}
+.menu li a{
+ color: #fff;
+ }
+.menu li{
+display: inline-block;
+list-style: none; 
+font-size: 30px;
+font-weight: 5030
+margin-left: 25px;
+}
+.ind{
+  height: 250px;
+}
+.about{
+  height: 200px;
+}
+.con{
+  height: 200px
+}
+.pro{
+  height: 200px;
+}
+.val{
+  height: 50px;
+}
+.space{
+  height: 10px;
+}
+.nam{  
+  font-size: 20px;
+  font-family:'Ubuntu',sans-serif
+}
+.cont{
+  font-size: 25px;
+  color:#DC143C; 
+}
+
+h1{
+  color: var(--text-color);
+  font-size: 50px;
+  letter-spacing: -5px;
+  margin-bottom: 20px;
+  text-align:  center;
+}
+
+a:hover{
+  color:#DC143C;
+}
+.menu li a:hover{
+  color:#DC143C;
+}
+h2 {
+  text-align: center;
+  margin-left: 10px;
+  color: var(--text-color);
+  height: 5%;
+}
+
+h3{
+  text-align: center;
+  color: var(--text-color);
+  height: 80%
+  /*width: 150px;*/
+}
+
+ul {
+  list-style-type: none
+}
+
+ul li {
+  padding-left:40px;
+  height: 5%;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
+}
+
+p{
+  font-size: 30px;
+  margin: 20px 0;
+  color: var(--text-color);
+}
+
+
+.wb-body {
+  background: #111;
+  padding: 20px;
+}
+
+.hidden {
+  display: none;
+}
+
+.cursor {
+  font-weight: 700;
+  animation: 1s blink step-end infinite;
+}
+#ak{
+  animation:type 3s  infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes type{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 12ch; 
+  }
+}
+#ab{
+  animation:about 3s  infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes about{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 18ch; 
+  }
+}
+#pr{
+  animation:project 3s  infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes project{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 10ch; 
+  }
+}
+#co{
+  animation:contact 3s  infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes contact{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 12ch; 
+  }
+}
+@keyframes blink {
+  from,
+  to {
+    color: transparent;
+  }
+
+  50% {
+    color: var(--text-color);
+  }
+}
