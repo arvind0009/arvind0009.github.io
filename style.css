@@ -150,6 +150,9 @@ margin-left: 25px;
 .con{
   height: 200px
 }
+.ski{
+  height: 200px;
+}
 .pro{
   height: 200px;
 }
@@ -225,6 +228,32 @@ p{
 .hidden {
   display: none;
 }
+.skills-item{
+    display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(10rem,1fr));
+  grid-gap: 12rem;  
+}
+.items{
+  height: 10rem;
+  padding: 3rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: poppins, sans-serif;
+  letter-spacing: 0.05rem;
+  font-size: 0.8rem;
+}
+.skills-heading h2{
+  text-align: center;
+  font-size: 25px;
+  margin-bottom: 8rem;
+  font-family: poppins, sans-serif;
+}
+.skills-pics{
+  height: 4rem;
+  width: 4rem;
+}
 
 .cursor {
   font-weight: 700;
@@ -254,6 +283,19 @@ p{
   }
   100%{
     width: 18ch; 
+  }
+}
+#sk{
+  animation:skills 3s  infinite alternate;
+  overflow: hidden;
+  white-space: nowrap;
+}
+@keyframes skills{
+  0%{
+    width:0ch;
+  }
+  100%{
+    width: 8ch; 
   }
 }
 #pr{
